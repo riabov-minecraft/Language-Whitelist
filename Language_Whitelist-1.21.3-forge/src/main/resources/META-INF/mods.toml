@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[53,)"
+license="MIT"
+clientSideOnly=true
+
+[[mods]]
+modId="langwhitelist"
+version="${file.jarVersion}"
+displayName="Language Whitelist"
+authors="Riabov"
+description='''
+Filters the Language menu so it only shows the languages you choose.
+'''
+logoFile="icon.png"
+logoBlur=false
+
+[[dependencies.langwhitelist]]
+modId="forge"
+mandatory=true
+versionRange="[53.1.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.langwhitelist]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.3,1.21.4)"
+ordering="NONE"
+side="CLIENT"

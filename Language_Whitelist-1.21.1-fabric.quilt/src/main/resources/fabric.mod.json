@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "langwhitelist",
+  "version": "${version}",
+  "name": "Language Whitelist",
+  "description": "Filters the Language menu so it only shows the languages you choose.",
+  "authors": [
+    "Riabov"
+  ],
+  "license": "MIT",
+  "icon": "assets/langwhitelist/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.riabov.langwhitelist.LangWhitelistMod"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "langwhitelist.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.25",
+    "minecraft": "1.21.1",
+    "java": ">=21"
+  }
+}

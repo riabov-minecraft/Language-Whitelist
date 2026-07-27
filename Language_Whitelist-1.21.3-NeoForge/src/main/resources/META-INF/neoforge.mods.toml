@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="langwhitelist"
+version="${file.jarVersion}"
+displayName="Language Whitelist"
+authors="Riabov"
+description='''
+Filters the Language menu so it only shows the languages you choose.
+'''
+logoFile="icon.png"
+logoBlur=false
+displayTest="IGNORE_ALL_VERSION"
+
+[[mixins]]
+config="langwhitelist.client.mixins.json"
+
+[[dependencies.langwhitelist]]
+modId="neoforge"
+type="required"
+versionRange="[21.3.96,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.langwhitelist]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.3,1.21.4)"
+ordering="NONE"
+side="CLIENT"
